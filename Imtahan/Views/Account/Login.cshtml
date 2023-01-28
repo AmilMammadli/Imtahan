@@ -1,0 +1,30 @@
+﻿@using Imtahan.DTOs.UserDto
+@model UserLoginDto
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+<div class="mt-5">
+<div
+<form method="post">
+    <!-- Email input -->
+    <div class="form-outline mb-4 mt-5">
+        <input asp-for="Username" class="form-control"/>
+        <label class="form-label" asp-for="Username"></label>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input asp-for="Password" class="form-control"/>
+        <label class="form-label" asp-for="Password"></label>
+    </div>
+
+    <a asp-controller= "Account" asp-action="register">Register now</a>
+
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+</form>
+</div>
+</div>
